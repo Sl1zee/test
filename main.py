@@ -14,7 +14,7 @@ def start(message):
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     if message.text == 'test':
-        bot.send_photo(message.chat.id, open('sos.jpg', 'rb'))
+        bot.send_photo(message.chat.id, open('35.jpg', 'rb'))
         markup = types.ReplyKeyboardMarkup()
         btn2 = types.KeyboardButton("bsd")
         markup.row(btn2)
